@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -10,13 +9,18 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class TodoFactory extends Factory
 {
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
     public function definition(): array
     {
         return [
             'user_id' => rand(1, 100),
             'title' => ucwords(fake()->sentence()),
-            'is_complete' => rand(0, 1), // lebih tepat boolean
-            'category_id' => Category::inRandomOrder()->first()->id ?? Category::factory(), 
+            'is_complete' => rand(1, 10) 
         ];
+        
     }
 }

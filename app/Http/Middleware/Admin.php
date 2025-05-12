@@ -14,14 +14,11 @@ class Admin
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
     public function handle(Request $request, Closure $next): Response
-{
-    // Jika user tidak admin, tolak
-    if (!$request->user() || !$request->user()->is_admin) {
-        return redirect()->route('dashboard');
+    {
+        if ($request->user() && !$request->user()->is_admin) {
+            return $next($request);
+        }
+        return redirect()->route('/dashboard');
+        
     }
-
-    // Jika admin, izinkan lanjut
-    return $next($request);
-}
-
 }

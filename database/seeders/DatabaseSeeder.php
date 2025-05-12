@@ -7,36 +7,28 @@ use App\Models\Todo;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
-use App\Models\Category;
+
 class DatabaseSeeder extends Seeder
 {
     /**
      * Seed the application's database.
      */
-
-      public function definition(): array
-    {
-        return [
-            'user_id' => rand(1, 100),
-            'title' => ucwords(fake()->sentence()),
-            'is_complete' => rand(0, 1),
-            'category_id' => rand(0, 1) ? Category::inRandomOrder()->first()?->id : null,
-        ];
-    }
     public function run(): void
-{
-    User::factory()->create([
-        'name' => 'Admin',
-        'email' => 'admin@admin.com',
-        'email_verified_at' => now(),
-        'password' => Hash::make('password'),
-        'remember_token' => Str::random(10),
-        'is_admin' => true
-    ]);
+    {
+        // Membuat 1 user admin
+        User::factory()->create([
+            'name' => 'Admin',
+            'email' => 'admin@admin.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('password'),
+            'remember_token' => Str::random(10),
+            'is_admin' => true
+        ]);
 
-    User::factory(100)->create();
-    Category::factory(10)->create(); // <--- tambahkan ini
-    Todo::factory(500)->create(); // akan otomatis dapat category_id yang valid
-}
+        // Membuat 100 user
+        User::factory(100)->create();
 
+        // Membuat 500 todo
+        Todo::factory(500)->create();
+    }
 }
