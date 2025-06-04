@@ -1,0 +1,71 @@
+[33mcommit f80ed07ef1ce1d91009bb3cc9a8d07b45c6c1d4f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: hilal555 <muhamadhilal04@gmail.com>
+Date:   Wed Jun 4 17:46:05 2025 +0700
+
+    api : auth
+
+[33mcommit 7183a984518db1943fcb8752ef5c8b3d8098f826[m
+Author: hilal555 <muhamadhilal04@gmail.com>
+Date:   Sat May 24 09:21:10 2025 +0700
+
+    mailtrap
+
+[33mcommit f0e15850737e55ab82ed8fe0609352fecbfccb72[m
+Author: hilal555 <muhamadhilal04@gmail.com>
+Date:   Sun May 18 19:56:17 2025 +0700
+
+    n+1 problem fix
+
+[33mcommit 2b219b897a8784ae76a5e0d11002f17731457a78[m
+Author: hilal555 <muhamadhilal04@gmail.com>
+Date:   Tue May 13 00:23:03 2025 +0700
+
+    ucp-1 add category
+
+[33mcommit d2db77db75b1ffaae61a98ab9b65c72dcf0bd3c3[m
+Author: hilal555 <muhamadhilal04@gmail.com>
+Date:   Mon May 12 23:33:44 2025 +0700
+
+    ucp-1 add category
+
+[33mcommit 8daa35fd5cdfce804c2669ee5ea0704f538e285d[m
+Author: hilal555 <muhamadhilal04@gmail.com>
+Date:   Mon May 12 23:15:56 2025 +0700
+
+    ucp-1 add category
+
+[33mcommit ae3f664d691a2f316306833e9e572bc2f5a3c306[m
+Author: hilal555 <muhamadhilal04@gmail.com>
+Date:   Sat May 3 09:39:42 2025 +0700
+
+    middleware, gate admin
+
+[33mcommit b4aea9655e3137d8817abcd9a164130493638397[m
+Author: hilal555 <muhamadhilal04@gmail.com>
+Date:   Mon Apr 28 21:38:10 2025 +0700
+
+    update, delete data
+
+[33mcommit 6aea3ad11c90ae45397d2c68575d8f4f672c7004[m
+Author: hilal555 <muhamadhilal04@gmail.com>
+Date:   Tue Apr 22 22:52:48 2025 +0700
+
+    create, read, search data
+
+[33mcommit 137b29c702092e14a5b5f7ac4d20c545cf605c04[m
+Author: hilal555 <muhamadhilal04@gmail.com>
+Date:   Wed Mar 26 00:18:28 2025 +0700
+
+    migration, database seeder, factory
+
+[33mcommit 79d22ec96cb8e249d38c7d8ed5e9f766dbc9d27a[m
+Author: hilal555 <muhamadhilal04@gmail.com>
+Date:   Sat Mar 15 09:37:38 2025 +0700
+
+    env, mvc, route, relationship
+
+[33mcommit 2594a4ba3b6de5b96294220a8058c278aa444cbc[m
+Author: hilal555 <muhamadhilal04@gmail.com>
+Date:   Tue Mar 11 20:24:51 2025 +0700
+
+    Install Breeze
